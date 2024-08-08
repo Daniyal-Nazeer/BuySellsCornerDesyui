@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="navbar bg-[#4c68ff]">
+    <div class="flex-1">
+      <a href="./index.html" class="btn btn-ghost text-xl text-white">Buy / Sells Corner</a>
+    </div>
+    <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a href="./postadd.html" class="justify-between">
+              Add Post
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="bg-[#FFF6F6] ml-5 mr-5 mt-5 mb-11">
+    <div class="round-lg">
+      <form class="w-[80%] mx-auto p-[30px]">
+        <label for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="search" id="default-search"
+            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg font-bold bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search" required />
+          <button type="submit"
+            class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container w-[70%] mx-auto"> 
+
+      <h1 class="text-[#000] text-[30px] p-[20px] font-bold">Products</h1>
+
+    <div class="grid grid-cols-2 gap-11">
+      <div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/p1.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Iphone XS</h2>
+            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed
+              molestiae voluptates incidunt iure sapiente.</p>
+            <div class="card-actions justify-start">
+              <h2 class="relative top-[45px] font-bold text-lg">Rs 80,000</h2>
+            </div>
+            <div class="card-actions justify-end">
+              <button class="text-white btn bg-[#F000B8]"><a href="./postdetail.html">MORE INFO</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/p2.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Samsung A32</h2>
+            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
+            <div class="card-actions justify-start">
+              <h2 class="relative top-[45px] font-bold text-lg">Rs 55,899</h2>
+            </div>
+            <div class="card-actions justify-end">
+              <button class="text-white btn bg-[#F000B8]"><a href="./postdetail.html">MORE INFO</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/p3.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Iphone 15 pro</h2>
+            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
+            <div class="card-actions justify-start">
+              <h2 class="relative top-[45px] font-bold text-lg">Rs 500,000</h2>
+            </div>
+            <div class="card-actions justify-end">
+              <button class="text-white btn bg-[#F000B8]"><a href="./postdetail.html">MORE INFO</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="./images/p4.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">samsung s22</h2>
+            <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
+            <div class="card-actions justify-start">
+              <h2 class="relative top-[45px] font-bold text-lg">Rs 350,000</h2>
+            </div>
+            <div class="card-actions justify-end">
+              <button class="text-white btn bg-[#F000B8]"><a href="./postdetail.html">MORE INFO</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    </div>
+
+
+  </section>
+
+
+  
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
